@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c15baf05b286b6a72b67c219e884790e",
+    "content-hash": "5d78d4daf470c4dd1747e93234488d4d",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -3620,16 +3620,16 @@
         },
         {
             "name": "symfony/form",
-            "version": "v5.4.3",
+            "version": "v5.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/form.git",
-                "reference": "2fa60c186cb70c940c766ca009b59949cfacd9cc"
+                "reference": "18f4f8209d2db06fc3cf5ba3b2eb8e4706b34aac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/form/zipball/2fa60c186cb70c940c766ca009b59949cfacd9cc",
-                "reference": "2fa60c186cb70c940c766ca009b59949cfacd9cc",
+                "url": "https://api.github.com/repos/symfony/form/zipball/18f4f8209d2db06fc3cf5ba3b2eb8e4706b34aac",
+                "reference": "18f4f8209d2db06fc3cf5ba3b2eb8e4706b34aac",
                 "shasum": ""
             },
             "require": {
@@ -3703,7 +3703,7 @@
             "description": "Allows to easily create, process and reuse HTML forms",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/form/tree/v5.4.3"
+                "source": "https://github.com/symfony/form/tree/v5.4.5"
             },
             "funding": [
                 {
@@ -3719,7 +3719,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-26T16:28:35+00:00"
+            "time": "2022-02-04T23:26:40+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -7091,16 +7091,16 @@
         },
         {
             "name": "symfony/twig-bridge",
-            "version": "v5.4.3",
+            "version": "v5.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bridge.git",
-                "reference": "925719b20832e3dabd399fd9ebf85ed0eabf9999"
+                "reference": "648c8694a9470ae4aaf64cbce1b640f5941fd7c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/925719b20832e3dabd399fd9ebf85ed0eabf9999",
-                "reference": "925719b20832e3dabd399fd9ebf85ed0eabf9999",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/648c8694a9470ae4aaf64cbce1b640f5941fd7c9",
+                "reference": "648c8694a9470ae4aaf64cbce1b640f5941fd7c9",
                 "shasum": ""
             },
             "require": {
@@ -7192,7 +7192,7 @@
             "description": "Provides integration for Twig with various Symfony components",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/twig-bridge/tree/v5.4.3"
+                "source": "https://github.com/symfony/twig-bridge/tree/v5.4.5"
             },
             "funding": [
                 {
@@ -7208,7 +7208,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:53:40+00:00"
+            "time": "2022-02-09T08:59:58+00:00"
         },
         {
             "name": "symfony/twig-bundle",

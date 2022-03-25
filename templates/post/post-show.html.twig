@@ -1,0 +1,57 @@
+{% extends 'post/index.html.twig' %}
+
+{% block title %}Hello PostController!{% endblock %}
+
+{% block content %}
+    <style>
+        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+        .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    </style>
+
+    <div class="example-wrapper">
+        {% if post is defined %}
+            <h2>{{ post.title }} </h2>
+            <p>Author: {{ post.author }}</p>
+            <p>{{ post.content }}</p>
+            <button> 
+                <a href="{{ path('postEdit', { 'id': post.id } ) }}"> EDIT </a> 
+            </button>
+            <form action="{{ url('postDelete', { id: post.id }) }}" method="post">
+                {# the argument of csrf_token() is an arbitrary string used to generate the token #}
+                <input type="hidden" name="token" value="{{ csrf_token('delete-post') }}"/>
+                {# attention au nom de Token !!!!!(il faut qu'il soit le meme aussi dans form) #}
+
+                <button type="submit">Delete item</button>
+            </form>
+            {# HERE the add comment form#}
+            <hr>
+           
+            <h2>COMMENTS</h2>
+            {# HERE the add comment add form#}
+            {% for comment in comments %}
+                <p>Commentaire écrit par {{ comment.author }} le xx/xx/xxxx</p>
+                <p>{{ comment.content }}</p>
+                <hr>
+                <form method="post" action="{{ path('commentDelete', {'postId': post.id, 'commentId': comment.id}) }}"
+                    onsubmit="return confirm('Are you sure you want to delete this item?');">
+                    {# <input type="hidden" name="_method" value="DELETE"> #}
+                    <input type="hidden" name="_token" value="{{ csrf_token('delete-comment') }}">
+                      {# attention au nom de Token !!!!!(il faut qu'il soit le meme aussi dans form) #}
+                    <button class="submit">Delete</button>
+                </form>
+    
+            {% else %}
+                <p>Il n'y a pas encore de commentaire, publiez le premier !</p>
+            {% endfor %}
+
+            {{ form(form) }}
+            
+        {% else %}
+            <p> There is no post caralhoooo !!! </p>
+        {% endif %}
+
+
+    </div>
+
+    {{ parent() }}
+{% endblock %}
